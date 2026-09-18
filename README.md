@@ -4,7 +4,7 @@ Landing page única (`index.html`, sem build, sem dependências de servidor) par
 
 ## Já configurado
 
-- **WhatsApp**: `5518982006688` (todos os botões e o link flutuante já usam esse número).
+- **WhatsApp**: `5511981219974` (todos os botões e o link flutuante já usam esse número).
 - **Preços sugeridos**: plano único, três períodos — Mensal R$ 29,90/mês, Trimestral R$ 24,90/mês (cobrado R$ 74,70 a cada 3 meses, economia de 17%), Anual R$ 19,90/mês (cobrado R$ 238,80/ano, economia de 33%). Preços "quebrados" (,90) e desconto crescente por período são de propósito: é o padrão que mais converte em assinaturas de streaming no Brasil.
 - **3 telas simultâneas** incluídas em todos os planos (aparelhos iguais ou diferentes) — destacado acima da grade de preços.
 - **Guia de programação** do hero é interativo (abas Ao vivo / Filmes / Séries) com categorias genéricas — ver nota abaixo sobre por que não usei nomes de canais reais.

@@ -237,6 +237,18 @@
   .plan li{ display:flex; gap:.6rem; font-size:.92rem; color: var(--paper); }
   .plan li svg{ width:18px; height:18px; flex-shrink:0; color: var(--signal); margin-top:.1rem; }
   .plan .btn{ width:100%; margin-top: var(--sp-3); }
+  .plan .bonus{ color: var(--signal); }
+
+  .screen-tabs{ display:flex; justify-content:center; gap:.7rem; flex-wrap:wrap; margin-bottom: var(--sp-5); }
+  .screen-tab{ font-family: var(--font-body); font-weight:700; font-size:.95rem; background: var(--panel); border:1px solid var(--line); color: var(--dim); padding:.7rem 1.2rem; border-radius:999px; cursor:pointer; display:inline-flex; align-items:center; gap:.55rem; transition: border-color .15s ease, color .15s ease, background .15s ease; }
+  .screen-tab.is-active{ color: var(--ink); background: var(--tune); border-color: var(--tune); }
+  .screen-tab .deal-flag{ font-family: var(--font-mono); font-size:.66rem; letter-spacing:.03em; background: var(--signal); color:#1a0704; padding:.22rem .5rem; border-radius:999px; white-space:nowrap; }
+  .screen-tab.is-active .deal-flag{ background:#1a0704; color: var(--tune); }
+  .screen-panel{ display:none; }
+  .screen-panel.is-active{ display:block; }
+  .deal-banner{ text-align:center; background: linear-gradient(90deg, var(--signal-dim), transparent 70%); border:1px solid var(--signal); border-radius: var(--radius); padding: .9rem 1.4rem; margin-bottom: var(--sp-5); font-size:.95rem; color: var(--paper); }
+  .deal-banner strong{ color: var(--tune); }
+  @media (max-width:560px){ .screen-tab{ font-size:.85rem; padding:.6rem 1rem; } }
 
   /* ---------- devices ---------- */
   .device-row{ display:grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: var(--sp-4); }
@@ -339,13 +351,13 @@
           <h1><span>TODO CANAL.</span><span class="accent">UM SINAL SÓ.</span></h1>
           <p class="lede">Canais ao vivo, filmes, séries, esportes e conteúdo infantil reunidos em uma assinatura só. Ative em minutos e assista na Smart TV, no celular, no TV Box ou onde estiver.</p>
           <div class="hero-ctas">
-            <a class="btn btn-ok" href="https://wa.me/5518982006688?text=Ol%C3%A1!%20Quero%20assinar%20a%20Sintonia%2B" target="_blank" rel="noopener">
+            <a class="btn btn-ok" href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Quero%20assinar%20a%20Sintonia%2B" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.02 2c-5.5 0-9.98 4.48-9.98 9.98 0 1.76.46 3.48 1.34 5L2 22l5.18-1.36a9.96 9.96 0 0 0 4.84 1.24h.01c5.5 0 9.98-4.48 9.98-9.98S17.52 2 12.02 2Zm5.85 14.27c-.25.7-1.24 1.28-2.02 1.44-.54.11-1.24.2-3.6-.77-3.02-1.25-4.96-4.3-5.11-4.5-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.05-2.49.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.53.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.28 1.63 2.08 1.12 1.03 2.06 1.35 2.36 1.5.3.15.48.13.65-.08.18-.2.75-.86.95-1.16.2-.3.4-.25.67-.15.28.1 1.75.85 2.05 1 .3.15.5.22.58.35.07.13.07.75-.18 1.45Z"/></svg>
               Falar no WhatsApp
             </a>
             <a class="btn btn-outline" href="#planos">Ver planos</a>
           </div>
-          <p style="margin-top:1rem; font-size:.9rem; color:var(--dim);">Quer testar antes de assinar? <a href="https://wa.me/5518982006688?text=Ol%C3%A1!%20Quero%20pedir%20meu%20teste%20gr%C3%A1tis%20da%20Sintonia%2B" target="_blank" rel="noopener" style="color:var(--tune); font-weight:700; text-decoration:none;">Peça seu teste grátis →</a></p>
+          <p style="margin-top:1rem; font-size:.9rem; color:var(--dim);">Quer testar antes de assinar? <a href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Quero%20pedir%20meu%20teste%20gr%C3%A1tis%20da%20Sintonia%2B" target="_blank" rel="noopener" style="color:var(--tune); font-weight:700; text-decoration:none;">Peça seu teste grátis →</a></p>
 
           <div class="stat-strip">
             <div><div class="num mono">+12.400</div><div class="label">títulos em VOD</div></div>
@@ -526,59 +538,126 @@
         <div class="section-head" style="margin-inline:auto; text-align:center;">
           <span class="eyebrow">Assinatura</span>
           <h2>Sintonize seu plano</h2>
-          <p style="margin-inline:auto;">Mesmo plano, três formas de pagar. Quanto maior o período, maior o desconto.</p>
+          <p style="margin-inline:auto;">Escolha quantas telas vai usar ao mesmo tempo. Quanto maior o período, maior o desconto.</p>
         </div>
 
-        <div class="plan-includes reveal">
-          <span>✓ 3 telas simultâneas — em aparelhos iguais ou diferentes</span>
-          <span>✓ Catálogo completo: ao vivo, filmes e séries</span>
-          <span>✓ Ativação rápida e suporte via WhatsApp</span>
-          <span>✓ Atendimento em todo o Brasil</span>
+        <div class="screen-tabs" role="tablist" aria-label="Quantidade de telas">
+          <button type="button" class="screen-tab" role="tab" aria-selected="false" aria-controls="screens-1" data-panel="screens-1">1 Tela</button>
+          <button type="button" class="screen-tab is-active" role="tab" aria-selected="true" aria-controls="screens-2" data-panel="screens-2">2 Telas <span class="deal-flag">🎁 +1 Grátis</span></button>
         </div>
 
-        <div class="pricing-grid" id="pricingGrid">
-          <div class="plan reveal">
-            <h3>Mensal</h3>
-            <div class="plan-tagline">Sem compromisso de permanência</div>
-            <div class="price"><span class="amount mono">R$ 29,90</span><span class="period">/mês</span></div>
-            <div class="billed-as">Cobrado mensalmente</div>
-            <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>3 telas simultâneas, em aparelhos iguais ou diferentes</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Canais ao vivo + VOD completo</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Qualidade HD / Full HD</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
-            </ul>
-            <a class="btn btn-outline" href="https://wa.me/5518982006688?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Mensal%20da%20Sintonia%2B" target="_blank" rel="noopener">Assinar plano Mensal</a>
+        <div class="screens-wrap">
+          <!-- PAINEL: 1 TELA -->
+          <div class="screen-panel" id="screens-1" role="tabpanel">
+            <div class="plan-includes reveal">
+              <span>✓ 1 tela simultânea</span>
+              <span>✓ Catálogo completo: ao vivo, filmes e séries</span>
+              <span>✓ Ativação rápida e suporte via WhatsApp</span>
+              <span>✓ Atendimento em todo o Brasil</span>
+            </div>
+
+            <div class="pricing-grid">
+              <div class="plan reveal">
+                <h3>Mensal</h3>
+                <div class="plan-tagline">Sem compromisso de permanência</div>
+                <div class="price"><span class="amount mono">R$ 29,99</span><span class="period">/mês</span></div>
+                <div class="billed-as">Cobrado mensalmente</div>
+                <ul>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>1 tela simultânea</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Canais ao vivo + VOD completo</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Qualidade HD / Full HD</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
+                </ul>
+                <a class="btn btn-outline" href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Mensal%20%281%20Tela%29%20da%20Sintonia%2B" target="_blank" rel="noopener">Assinar plano Mensal</a>
+              </div>
+
+              <div class="plan is-featured reveal">
+                <span class="plan-badge">MAIS POPULAR · ECONOMIZE 17%</span>
+                <h3>Trimestral</h3>
+                <div class="plan-tagline">O equilíbrio entre economia e flexibilidade</div>
+                <div class="price"><span class="amount mono">R$ 24,99</span><span class="period">/mês</span></div>
+                <div class="billed-as">Cobrado R$ 74,97 a cada 3 meses</div>
+                <ul>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>1 tela simultânea</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Canais ao vivo + VOD completo</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Qualidade HD / Full HD</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
+                </ul>
+                <a class="btn btn-signal" href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Trimestral%20%281%20Tela%29%20da%20Sintonia%2B" target="_blank" rel="noopener">Assinar plano Trimestral</a>
+              </div>
+
+              <div class="plan reveal">
+                <span class="plan-badge is-tune">ECONOMIZE 33%</span>
+                <h3>Anual</h3>
+                <div class="plan-tagline">Melhor custo-benefício</div>
+                <div class="price"><span class="amount mono">R$ 19,99</span><span class="period">/mês</span></div>
+                <div class="billed-as">Cobrado R$ 239,88 por ano</div>
+                <ul>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>1 tela simultânea</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Canais ao vivo + VOD completo</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Qualidade HD / Full HD</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
+                </ul>
+                <a class="btn btn-outline" href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Anual%20%281%20Tela%29%20da%20Sintonia%2B" target="_blank" rel="noopener">Assinar plano Anual</a>
+              </div>
+            </div>
           </div>
 
-          <div class="plan is-featured reveal">
-            <span class="plan-badge">MAIS POPULAR · ECONOMIZE 17%</span>
-            <h3>Trimestral</h3>
-            <div class="plan-tagline">O equilíbrio entre economia e flexibilidade</div>
-            <div class="price"><span class="amount mono">R$ 24,90</span><span class="period">/mês</span></div>
-            <div class="billed-as">Cobrado R$ 74,70 a cada 3 meses</div>
-            <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>3 telas simultâneas, em aparelhos iguais ou diferentes</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Canais ao vivo + VOD completo</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Qualidade HD / Full HD</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
-            </ul>
-            <a class="btn btn-signal" href="https://wa.me/5518982006688?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Trimestral%20da%20Sintonia%2B" target="_blank" rel="noopener">Assinar plano Trimestral</a>
-          </div>
+          <!-- PAINEL: 2 TELAS + BÔNUS -->
+          <div class="screen-panel is-active" id="screens-2" role="tabpanel">
+            <div class="deal-banner reveal">🎁 <strong>Assine para 2 telas e ganhe a 3ª de bônus</strong> — três acessos simultâneos pelo preço de dois.</div>
+            <div class="plan-includes reveal">
+              <span>✓ 2 telas pagas + 1 tela bônus</span>
+              <span>✓ 3 acessos simultâneos, em aparelhos iguais ou diferentes</span>
+              <span>✓ Catálogo completo: ao vivo, filmes e séries</span>
+              <span>✓ Suporte via WhatsApp</span>
+            </div>
 
-          <div class="plan reveal">
-            <span class="plan-badge is-tune">ECONOMIZE 33%</span>
-            <h3>Anual</h3>
-            <div class="plan-tagline">Melhor custo-benefício</div>
-            <div class="price"><span class="amount mono">R$ 19,90</span><span class="period">/mês</span></div>
-            <div class="billed-as">Cobrado R$ 238,80 por ano</div>
-            <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>3 telas simultâneas, em aparelhos iguais ou diferentes</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Canais ao vivo + VOD completo</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Qualidade HD / Full HD</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
-            </ul>
-            <a class="btn btn-outline" href="https://wa.me/5518982006688?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Anual%20da%20Sintonia%2B" target="_blank" rel="noopener">Assinar plano Anual</a>
+            <div class="pricing-grid">
+              <div class="plan reveal">
+                <h3>Mensal</h3>
+                <div class="plan-tagline">Sem compromisso de permanência</div>
+                <div class="price"><span class="amount mono">R$ 34,99</span><span class="period">/mês</span></div>
+                <div class="billed-as">Cobrado mensalmente</div>
+                <ul>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>2 telas pagas <b class="bonus">+1 BÔNUS</b> = 3 simultâneas</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Canais ao vivo + VOD completo</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Qualidade HD / Full HD</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
+                </ul>
+                <a class="btn btn-outline" href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Mensal%20%282%20Telas%20%2B%20B%C3%B4nus%29%20da%20Sintonia%2B" target="_blank" rel="noopener">Assinar plano Mensal</a>
+              </div>
+
+              <div class="plan is-featured reveal">
+                <span class="plan-badge">MAIS POPULAR · ECONOMIZE 17%</span>
+                <h3>Trimestral</h3>
+                <div class="plan-tagline">O equilíbrio entre economia e flexibilidade</div>
+                <div class="price"><span class="amount mono">R$ 29,16</span><span class="period">/mês</span></div>
+                <div class="billed-as">Cobrado R$ 87,48 a cada 3 meses</div>
+                <ul>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>2 telas pagas <b class="bonus">+1 BÔNUS</b> = 3 simultâneas</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Canais ao vivo + VOD completo</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Qualidade HD / Full HD</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
+                </ul>
+                <a class="btn btn-signal" href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Trimestral%20%282%20Telas%20%2B%20B%C3%B4nus%29%20da%20Sintonia%2B" target="_blank" rel="noopener">Assinar plano Trimestral</a>
+              </div>
+
+              <div class="plan reveal">
+                <span class="plan-badge is-tune">ECONOMIZE 33%</span>
+                <h3>Anual</h3>
+                <div class="plan-tagline">Melhor custo-benefício</div>
+                <div class="price"><span class="amount mono">R$ 23,32</span><span class="period">/mês</span></div>
+                <div class="billed-as">Cobrado R$ 279,84 por ano</div>
+                <ul>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>2 telas pagas <b class="bonus">+1 BÔNUS</b> = 3 simultâneas</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Canais ao vivo + VOD completo</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Qualidade HD / Full HD</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Suporte via WhatsApp</li>
+                </ul>
+                <a class="btn btn-outline" href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Anual%20%282%20Telas%20%2B%20B%C3%B4nus%29%20da%20Sintonia%2B" target="_blank" rel="noopener">Assinar plano Anual</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -683,7 +762,7 @@
         <h2>Pronto pra entrar no ar?</h2>
         <p>Fale agora com nosso time e comece a assistir ainda hoje.</p>
         <div class="hero-ctas">
-          <a class="btn btn-ok" href="https://wa.me/5518982006688?text=Ol%C3%A1!%20Quero%20assinar%20a%20Sintonia%2B" target="_blank" rel="noopener">
+          <a class="btn btn-ok" href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Quero%20assinar%20a%20Sintonia%2B" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.02 2c-5.5 0-9.98 4.48-9.98 9.98 0 1.76.46 3.48 1.34 5L2 22l5.18-1.36a9.96 9.96 0 0 0 4.84 1.24h.01c5.5 0 9.98-4.48 9.98-9.98S17.52 2 12.02 2Zm5.85 14.27c-.25.7-1.24 1.28-2.02 1.44-.54.11-1.24.2-3.6-.77-3.02-1.25-4.96-4.3-5.11-4.5-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.05-2.49.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.53.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.28 1.63 2.08 1.12 1.03 2.06 1.35 2.36 1.5.3.15.48.13.65-.08.18-.2.75-.86.95-1.16.2-.3.4-.25.67-.15.28.1 1.75.85 2.05 1 .3.15.5.22.58.35.07.13.07.75-.18 1.45Z"/></svg>
             Falar no WhatsApp
           </a>
@@ -719,7 +798,7 @@
         <div>
           <h4>Atendimento</h4>
           <ul>
-            <li><a href="https://wa.me/5518982006688" target="_blank" rel="noopener">WhatsApp: (18) 98200-6688</a></li>
+            <li><a href="https://wa.me/5511981219974" target="_blank" rel="noopener">WhatsApp: (11) 98121-9974</a></li>
             <li><a href="mailto:contato@sintoniaplus.com.br">contato@sintoniaplus.com.br</a></li>
           </ul>
         </div>
@@ -731,7 +810,7 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/5518982006688?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sintonia%2B" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <a class="wa-float" href="https://wa.me/5511981219974?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sintonia%2B" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.02 2c-5.5 0-9.98 4.48-9.98 9.98 0 1.76.46 3.48 1.34 5L2 22l5.18-1.36a9.96 9.96 0 0 0 4.84 1.24h.01c5.5 0 9.98-4.48 9.98-9.98S17.52 2 12.02 2Zm5.85 14.27c-.25.7-1.24 1.28-2.02 1.44-.54.11-1.24.2-3.6-.77-3.02-1.25-4.96-4.3-5.11-4.5-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.05-2.49.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.53.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.28 1.63 2.08 1.12 1.03 2.06 1.35 2.36 1.5.3.15.48.13.65-.08.18-.2.75-.86.95-1.16.2-.3.4-.25.67-.15.28.1 1.75.85 2.05 1 .3.15.5.22.58.35.07.13.07.75-.18 1.45Z"/></svg>
   </a>
 
@@ -772,6 +851,20 @@
         tab.setAttribute('aria-selected', 'true');
         container.querySelectorAll('.epg-panel').forEach(function(p){ p.classList.remove('is-active'); });
         container.querySelector('#' + tab.dataset.panel).classList.add('is-active');
+      });
+    });
+  });
+
+  // screen tabs (planos)
+  document.querySelectorAll('.screen-tabs').forEach(function(tabs){
+    var wrap = tabs.nextElementSibling;
+    tabs.querySelectorAll('.screen-tab').forEach(function(tab){
+      tab.addEventListener('click', function(){
+        tabs.querySelectorAll('.screen-tab').forEach(function(t){ t.classList.remove('is-active'); t.setAttribute('aria-selected', 'false'); });
+        tab.classList.add('is-active');
+        tab.setAttribute('aria-selected', 'true');
+        wrap.querySelectorAll('.screen-panel').forEach(function(p){ p.classList.remove('is-active'); });
+        wrap.querySelector('#' + tab.dataset.panel).classList.add('is-active');
       });
     });
   });
